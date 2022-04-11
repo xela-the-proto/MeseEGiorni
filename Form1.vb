@@ -28,7 +28,7 @@ Public Class frm_giorniMese
                     lbl_giorni.Text = "numero di giorni: 28"
                 End If
             Case Else
-                lbl_giorni.Text = "numero del mese invalido"
+                MessageBox.Show("mese invalido", "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 txt_mese.Clear()
                 lbl_giorni.Text = ""
                 txt_mese.Focus()
